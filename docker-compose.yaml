@@ -1,0 +1,11 @@
+version: '2'
+services:
+  rsyslog-docker:
+    hostname: rsyslog-docker
+    container_name: rsyslog-docker
+    build: .
+    image: rsyslog-docker
+    ports:
+      - "8514:514"
+    #environment:
+     # - "SUPERVISORD_LOGLEVEL=debug"
