@@ -6,6 +6,6 @@ services:
     build: .
     image: rsyslog-docker
     ports:
-      - "8514:514"
+      - "8514:514/udp"
     #environment:
      # - "SUPERVISORD_LOGLEVEL=debug"
