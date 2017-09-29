@@ -1,0 +1,27 @@
+package:
+  logrotate:
+    installed: true
+    versions:
+    - 3.12.2-r0
+  rsyslog:
+    installed: true
+    versions:
+    - 8.26.0-r0
+  supervisor:
+    installed: true
+    versions:
+    - 3.2.4-r0
+port:
+  tcp:10514:
+    listening: true
+    ip:
+    - 0.0.0.0
+  udp:8514:
+    listening: true
+    ip:
+    - 0.0.0.0
+process:
+  logrotated.sh:
+    running: true
+  rsyslogd:
+    running: true
